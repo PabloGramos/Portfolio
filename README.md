@@ -1,2 +1,2 @@
-# Portifolio
-Site pessoal para portifólio
+# Portfólio
+Site pessoal para portfólio
