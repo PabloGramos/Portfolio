@@ -59,9 +59,19 @@ img.icone:hover{
     height: 30vw;
 }
 
+#opcoes{
+    height: 100%;
+    background-color: rgb(12, 14, 29);
+    height: 600px;
+}
+
 img.opcoes{
+    display: inline;
     height: 100px;
-    margin: 10vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .texto{
@@ -70,4 +80,17 @@ img.opcoes{
     margin-left: 160px;
     font-size: 20pt;
     font-family: Arial sans-serif;
+}
+
+footer{
+    position: absolute;
+    margin-bottom: 0;
+    height: 100px;
+    width: 100%;
+    background-image: linear-gradient(to left, rgb(0, 0, 0), rgb(31, 35, 73), rgb(0, 0, 0));
+}
+
+#rodape{
+    text-align: center;
+    margin-top: 50px;
 }
