@@ -39,7 +39,13 @@ h2{
     height: 300px;    
 }
 
-
+a{
+    color: rgb(160, 159, 255);
+}
+#contato{
+    color: rgb(160, 159, 255);
+    text-align: center;
+}
 
 img.icone{
     height: 60px;
