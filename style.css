@@ -11,7 +11,7 @@
 }
 @charset "UTF-8";
 body{
-    background-image: linear-gradient(to top, black, white);
+    background-color: rgb(12, 14, 29);
     color: white;
     
 }
@@ -68,20 +68,49 @@ img.icone:hover{
 #opcoes{
     
     background-color: rgb(12, 14, 29);
-    height: 600px;
+    height: 210px;
+    
 }
 
-img.opcoes{
-    display: inline;
-    height: 100px;
+
+#opcao1{
+    position: absolute;
+    height: 150px;
     margin-left: 10vw;
-    margin-right: 10vw;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    display: block;
+    margin-top: 50px;
+    transition: 1s;
+}
+#opcao2{
+    position: absolute;
+    height: 150px;
+    margin-left: 45vw;
+    margin-top: 50px;
+    transition: 1s;
+}
+#opcao3{
+    position: absolute;
+    height: 150px;
+    margin-left: 75vw;
+    margin-top: 50px;
+    transition: 1s;
+}
+#opcao1:hover{
+    opacity: 40%;
+    transition: 1s;
+}
+#opcao2:hover{
+    opacity: 40%;
+    transition: 1s;
+}
+#opcao3:hover{
+    opacity: 40%;
+    transition: 1s;
 }
 
 #espaco_opcoes{
-    /*background-color: rgb(0, 12, 121);*/
+    background-color: rgb(0, 12, 121);
+
 }
 
 .texto{
@@ -92,10 +121,31 @@ img.opcoes{
     font-family: Arial sans-serif;
 }
 
+#legenda{
+    background-color: rgb(12, 14, 29);
+    display: flex;
+    height: 350px;
+}
+
+.texto_legenda1{
+    position: relative;
+    margin-left: 13vw;
+
+}
+.texto_legenda2{
+    position: relative;
+    margin-left: 28vw;
+
+}
+.texto_legenda3{
+    position: relative;
+    margin-left: 24vw;
+}
+
 footer{
     position: absolute;
     margin-bottom: 0;
-    height: 100px;
+    height: 200px;
     width: 100%;
     background-image: linear-gradient(to left, rgb(0, 0, 0), rgb(31, 35, 73), rgb(0, 0, 0));
 }
