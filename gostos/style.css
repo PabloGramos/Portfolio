@@ -15,8 +15,42 @@ body{
     color: white;
     
 }
-
+header{
+    height: 200px;
+    background-color: azure;
+}
 h1{
     font-size: 45pt;
     margin: 100px;
+}
+nav#quadros{
+    background-color: blue;
+    height: 400px;
+    text-align: center;
+    padding: auto;
+}
+
+div{
+    background-color: aqua;
+    width: 10vw;
+    height: 900px;
+    padding: 50px;
+    border: 1px solid red;
+    
+}
+#clube{
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    display: inline;
+}
+#games{
+    margin-right: 100px;
+    margin-left: 100px;
+    display: inline;
+}
+#basquete{
+    margin-right: 100px;
+    margin-left: 100px;
+    display: inline;
 }

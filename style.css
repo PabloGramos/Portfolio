@@ -1,25 +1,32 @@
+/* ESTILO DO CORPO */
+
 *{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
     font-family: "Verdana", sans-serif;
-    border: 0;
-    font-size: 100%;
     font: inherit;
-    vertical-align: baseline;
     text-decoration: none;
 }
 @charset "UTF-8";
 body{
-    background-color: rgb(12, 14, 29);
-    color: white;
-    
+    background-image: linear-gradient(to left, rgb(0, 0, 0), rgb(31, 35, 73), rgb(0, 0, 0));
+    color: white;    
+}
+a{
+    color: rgb(160, 159, 255);
 }
 
+/* APRESENTAÇÃO DE CABEÇALHO */
+
 div#apresentacao{
-    display: block;
-    border: 2px solid rgb(6, 2, 20);
-    background-color: rgb(12, 14, 29);
+    display:flex;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(3, 4, 17);
+    
+}
+#nome{
+    width: 400px;
 }
 h1{
     font-size: 40pt;
@@ -32,116 +39,259 @@ h2{
     margin-bottom: 10px;
 }
 
-
-
-#fotoeu{
-    float: right;
-    margin: 60px 140px 20px 20px;
-    border-radius: 1vw;
-    height: 300px;    
-}
-
-a{
-    color: rgb(160, 159, 255);
-}
-#contato{
-    color: rgb(160, 159, 255);
-    text-align: center;
-}
-
 img.icone{
+    margin-top: 170px;
     height: 60px;
-    margin-top: 30px;
-    margin-bottom: 60px;
-    margin-left: 30px;
+    margin-left: 3vw;
     text-align: center;
     transition: all 1s;
 }
 img.icone:hover{
-    height: 70px;
-    transition: all 1s;
-    margin-bottom: 50px;
+    transition: all 0.6s;
+    opacity: 0.7;
+    margin-top: 150px;
 }
+
+
+/* APRESENTAÇÃO PRINCIPAL */
+
 .espaco{
-    background-image: linear-gradient(to left, rgb(0, 0, 0), rgb(31, 35, 73), rgb(0, 0, 0));
-    height: 40vw;
+    /*background-image: linear-gradient(to left, rgb(0, 0, 0), rgb(31, 35, 73), rgb(0, 0, 0));*/
+    
+    display: inline;
 }
+
+.texto{
+    text-align: center;
+    width: 50vw;
+    margin-left: 10vw;
+    margin-top: 200px;
+    font-size: 20pt;
+    font-family: Arial sans-serif;
+}
+
+#fotoeu{
+    float: right;
+    margin: 50px 10vw;
+    border-radius: 1vw;
+    height: 500px;    
+    box-shadow: 5px 10px 10px rgb(0, 0, 0);
+}
+
+
+
+/* ESPAÇO PARA OPÇÕES DE ABAS PARA PROJETOS E CURRÍCULO */
 
 #opcoes{
-    height: 210px;
-}
-
-
-#opcao1{
-
-    height: 150px;
-
-
-    margin-top: 50px;
-    transition: 1s;
-}
-#opcao2{
- 
-    height: 150px;
-
-    margin-top: 50px;
-    transition: 1s;
-}
-#opcao3{
-
-    height: 150px;
-
-    margin-top: 50px;
-    transition: 1s;
-}
-#opcao1:hover{
-    opacity: 40%;
-    transition: 1s;
-}
-#opcao2:hover{
-    opacity: 40%;
-    transition: 1s;
-}
-#opcao3:hover{
-    opacity: 40%;
-    transition: 1s;
+    height: 500px;
+    width: 100%;
 }
 
 #espaco_opcoes{
     margin-top: 100px;
+    width: 100%;
     justify-content: space-between;
     display: flex;
     padding-left: 5vw;
     padding-right: 5vw;
 }
 
-.texto{
+.img_opcao{
+    height: 150px;
+}
+
+.img_opcao:hover{
+    margin-top: 0px;
+}
+.a_opcao{
+    position: relative;
+    margin: 100px auto 0px auto;
     text-align: center;
-    width: 600px;
-    margin-left: 160px;
+    transition: 0.5s;
+}
+.a_opcao:hover{
+    margin: 70px auto 0px auto;
+    transition: 0.5s;
+    opacity: 60%;
+}
+
+/* ÁREA DE CONHECIMENTOS DE LINGUAGENS */
+
+.conhecimentos{
+    width: 100%;
+    text-align: center;
+}
+
+.titulo_conhecimento{
+    font-size: 35pt;
+    margin: 100px 20px;
+}
+
+.tecnologia{
+    text-align: center;
+    height: 220px;
+    margin: 20px 7vw;
+    transition: 1s;
+    box-shadow: 0px 0px 0px rgb(0, 0, 0);
+    /*background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(128, 128, 131));*/
+}
+.tecnologia:hover{
+    /*background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(21, 0, 206), rgb(255, 255, 255));*/
+    transition: 0.5s;
+    opacity: 70%;
+    box-shadow: 0px 2px 0px rgb(0, 0, 0);
+}
+.img_tec{
+    height: 180px;
+    position: relative;
+    
+}
+.leg_tec{
     font-size: 20pt;
-    font-family: Arial sans-serif;
+    font-size: arial;
 }
 
 #legenda{
-    background-color: rgb(12, 14, 29);
     display: flex;
     justify-content: space-between;
-    height: 25vw;
+    height: 15%;
     padding-left: 8vw;
     padding-right: 7vw;
 }
 
 
 footer{
+    margin-top: 70px;
     position: absolute;
     margin-bottom: 0;
     height: 100px;
     width: 100%;
-    background-image: linear-gradient(to left, rgb(0, 0, 0), rgb(31, 35, 73), rgb(0, 0, 0));
+    background-color: rgb(12, 14, 29);
 }
 
 #rodape{
     text-align: center;
     margin-top: 50px;
+}
+
+
+/* ADAPITAÇÃO A DIFERENTES TAMANHOS DE TELA */
+
+
+@media screen and (max-width: 800px){
+    body{
+        width: 100vw;
+        
+    }
+
+    #apresentacao{
+        display: block;
+        text-align: center;
+        
+    }
+    #nome{
+        position: absolute;
+        width: 100%;
+        
+    }
+    h1{
+        font-size: 20pt;
+    }
+    h2{
+        font-size: 15pt;
+    }
+    #fotoeu{
+        height: 250px;
+        margin: 50px auto 10px auto;
+    }
+    .espaco{
+        display:grid;
+        width: 95%;
+        
+    }
+    .texto{
+        text-align: center;
+        width: 80vw;
+        margin-top: 20px;
+        font-size: 15pt;
+    }
+
+
+    #opcoes{
+        height: 300px;
+        width: 96vw;
+    }
+    
+    #espaco_opcoes{
+        margin-top: 50px;
+        width: 96vw;
+        justify-content: space-between;
+        display: flex;
+    }
+    
+    .img_opcao{
+        width: 78px;
+        height: 80px;
+    }
+    
+    .a_opcao{
+        position: relative;
+        margin: 100px auto 0px auto;
+        text-align: center;
+        transition: 0.5s;
+        font-size: 10pt;
+    }
+
+    /* CONHECIMETOS */
+
+    .conhecimentos{
+        width: 100%;
+        text-align: center;
+    }
+    
+    .titulo_conhecimento{
+        font-size: 17pt;
+        
+    }
+    
+    .tecnologia{
+        text-align: center;
+        height: 120px;
+        margin: 20px 7vw;
+        transition: 1s;
+        box-shadow: 0px 0px 0px rgb(0, 0, 0);
+        
+    }
+    .img_tec{
+        height: 80px;
+        
+        
+    }
+    .leg_tec{
+        font-size: 18pt;
+        font-size: arial;
+    }
+    
+    #legenda{
+        display: flex;
+        justify-content: space-between;
+        height: 15%;
+        padding-left: 8vw;
+        padding-right: 7vw;
+    }
+    
+    
+    footer{
+        position: absolute;
+        margin-bottom: 0;
+        height: 100px;
+        width: 100vw;
+        background-color: rgb(12, 14, 29);
+    }
+    
+    #rodape{
+        text-align: center;
+        margin-top: 50px;
+        font-size: 9pt;
+    }
 }
