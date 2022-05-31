@@ -27,10 +27,11 @@ div#apresentacao{
 }
 #nome{
     width: 400px;
+    height: 200px;
 }
 h1{
     font-size: 40pt;
-    padding-top: 9vw;
+    padding-top: 5vw;
     margin-left: 10px;
 }
 h2{
@@ -40,7 +41,7 @@ h2{
 }
 
 img.icone{
-    margin-top: 170px;
+    margin-top: 120px;
     height: 60px;
     margin-left: 3vw;
     text-align: center;
@@ -49,33 +50,34 @@ img.icone{
 img.icone:hover{
     transition: all 0.6s;
     opacity: 0.7;
-    margin-top: 150px;
+    margin-top: 100px;
 }
 
 
 /* APRESENTAÇÃO PRINCIPAL */
 
 .espaco{
-    /*background-image: linear-gradient(to left, rgb(0, 0, 0), rgb(31, 35, 73), rgb(0, 0, 0));*/
-    
     display: inline;
 }
 
+#fotoeu{
+    position: relative;
+    float: right;
+    margin-top: 30px;
+    margin-right: 7%;
+    border-radius: 1vw;
+    height: 400px;    
+    box-shadow: 5px 10px 10px rgb(0, 0, 0);
+}
+
 .texto{
+    position: absolute;
     text-align: center;
     width: 50vw;
     margin-left: 10vw;
     margin-top: 200px;
     font-size: 20pt;
     font-family: Arial sans-serif;
-}
-
-#fotoeu{
-    float: right;
-    margin: 50px 10vw;
-    border-radius: 1vw;
-    height: 500px;    
-    box-shadow: 5px 10px 10px rgb(0, 0, 0);
 }
 
 
@@ -120,20 +122,25 @@ img.icone:hover{
 .conhecimentos{
     width: 100%;
     text-align: center;
+    display: flex;
 }
 
 .titulo_conhecimento{
     font-size: 35pt;
-    margin: 100px 20px 200px;
+    position: absolute;
+    margin-left: 30%;
+    
 }
 
 .tecnologia{
-    text-align: center;
     height: 220px;
-    margin: 20px 7vw;
+    width: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 300px;
     transition: 1s;
     box-shadow: 0px 0px 0px rgb(0, 0, 0);
-    /*background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(128, 128, 131));*/
+    
 }
 .tecnologia:hover{
     /*background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(21, 0, 206), rgb(255, 255, 255));*/
@@ -142,12 +149,12 @@ img.icone:hover{
     box-shadow: 0px 2px 0px rgb(0, 0, 0);
 }
 .img_tec{
-    height: 180px;
+    height: 100px;
     position: relative;
     
 }
 .leg_tec{
-    font-size: 20pt;
+    font-size: 18pt;
     font-size: arial;
 }
 
@@ -155,8 +162,7 @@ img.icone:hover{
     display: flex;
     justify-content: space-between;
     height: 15%;
-    padding-left: 8vw;
-    padding-right: 7vw;
+    
 }
 
 
