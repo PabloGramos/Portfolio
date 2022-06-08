@@ -84,13 +84,13 @@ img.icone:hover{
 
 /* ESPAÇO PARA OPÇÕES DE ABAS PARA PROJETOS E CURRÍCULO */
 
-#opcoes{
+#projetos{
     height: 500px;
     width: 100%;
 }
 
-#espaco_opcoes{
-    margin-top: 100px;
+#espaco_projetos{
+    margin-top: 400px;
     width: 100%;
     justify-content: space-between;
     display: flex;
