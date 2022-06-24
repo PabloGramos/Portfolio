@@ -10,8 +10,8 @@
 }
 @charset "UTF-8";
 body{
-    background-image: linear-gradient(to left, rgb(0, 0, 0), rgb(31, 35, 73), rgb(0, 0, 0));
-    color: white;    
+    /*background-image: linear-gradient(to left, rgb(0, 0, 0), rgb(31, 35, 73), rgb(0, 0, 0));
+    color: white;    */
 }
 a{
     color: rgb(160, 159, 255);
@@ -33,11 +33,13 @@ h1{
     font-size: 40pt;
     padding-top: 5vw;
     margin-left: 10px;
+    color: white;
 }
 h2{
     font-size: 25pt;
     margin-left: 10px;
     margin-bottom: 10px;
+    color: white;
 }
 
 img.icone{
@@ -57,14 +59,14 @@ img.icone:hover{
 /* APRESENTAÇÃO PRINCIPAL */
 
 .espaco{
-    display: inline;
+    display: block;
 }
 
 #fotoeu{
     position: relative;
     float: right;
-    margin-top: 30px;
-    margin-right: 7%;
+    margin-top: 40px;
+    margin-right: 10%;
     border-radius: 1vw;
     height: 400px;    
     box-shadow: 5px 10px 10px rgb(0, 0, 0);
@@ -72,12 +74,121 @@ img.icone:hover{
 
 .texto{
     position: relative;
-    text-align: center;
-    width: 50vw;
-    margin-left: 20vw;
+    text-align:left;
+    width: 30vw;
+    margin-left: 15vw;
     margin-top: 200px;
-    font-size: 20pt;
+    font-size: 24pt;
     font-family: Arial sans-serif;
+}
+
+
+
+
+/* 
+        ***********************************************
+************* ÁREA DE CONHECIMENTOS DE LINGUAGENS **************
+        ***********************************************
+*/
+
+.conhecimentos{
+    width: 100%;
+    height: 600px;
+    text-align: center;
+    display: block;
+    background-color: rgb(0, 0, 0);
+    
+}
+
+.titulo_conhecimento{
+    font-size: 32pt;
+    margin-top: 200px;
+    position: relative;
+    
+    color: rgb(252, 252, 252);
+}
+
+
+.tecnologia{
+    float: left;
+    color: white;
+    height: 150px;
+    margin-top: 200px;
+    margin-left: 5%;
+    margin-right: 5%;
+    transition: 0.5s;
+    box-shadow: 0px 0px 0px rgb(80, 80, 80);
+    
+}
+.tecnologia:hover{
+    
+    transition: 0.4s;
+    opacity: 70%;
+    box-shadow: 0px 2px 0px rgb(202, 202, 202);
+}
+.img_tec{
+    height: 100px;
+    position: relative;
+    
+}
+.leg_tec{
+    font-size: 18pt;
+    font-size: arial;
+}
+
+#legenda{
+    display: flex;
+    justify-content: space-between;
+    height: 15%;
+    
+}
+
+/* ESPAÇO PARA TEXTO E CURRÍCULO */
+.texto2{
+    position: absolute;
+    text-align:left;
+    width: 30vw;
+    margin-left: 15vw;
+    margin-top: 200px;
+    font-size: 24pt;
+    font-family: Arial sans-serif;
+}
+#curriculo{
+    height: 200px;
+    width: 200px;
+    margin-top: 300px;
+    position: relative;
+    float: right;
+    display: flex;
+    margin-right: 20%;
+    border-radius: 50% ;
+    background-color: rgb(255, 255, 255);
+    transition: 1s;
+}
+#curriculo:hover{
+    background-color: black;
+    transition: 1s;
+}
+
+.img_opcao{
+    height: 150px;
+}
+
+.img_opcao:hover{
+    margin-top: 0px;
+}
+.a_opcao{
+    position: relative;
+    margin: 0px auto 0px auto;
+    text-align: center;
+    transition: 0.5s;
+    color: black;
+}
+.a_opcao:hover{
+    margin: -20px auto 0px auto;
+    transition: 0.5s;
+    opacity: 90%;
+    color: white;
 }
 
 /*
@@ -89,7 +200,7 @@ img.icone:hover{
 */
 
 #projetos{
-    margin-top: 200px;
+    margin-top: 800px;
     display: block;
     border: 4px solid white;
 }
@@ -113,115 +224,36 @@ img.icone:hover{
 }
 
 .legprojeto{
-    font-size: 20pt;
+    font-size: 24pt;
     position: absolute;
-    margin-left: 70%;
+    margin-left: 65%;
     margin-top: 40px;
     color: rgb(0, 172, 114);
 }
 
 .textprojeto{
+    color: white;
     font-size: 18pt;
     position: relative;
     float: right;
-    margin-top: 10%;
-    margin-right: 5%;
-    width: 400px;
+    margin-top: 12%;
+    margin-right: 6%;
+    width: 500px;
     text-align: center;
 }
 
-/* ESPAÇO PARA OPÇÕES DE ABAS PARA CURRÍCULO */
 
-#curriculo{
-    height: 500px;
-    width: 100%;
-}
-
-#espaco_curriculo{
-    margin-top: 400px;
-    width: 100%;
-    justify-content: space-between;
-    display: flex;
-    padding-left: 5vw;
-    padding-right: 5vw;
-}
-
-.img_opcao{
-    height: 150px;
-}
-
-.img_opcao:hover{
-    margin-top: 0px;
-}
-.a_opcao{
-    position: relative;
-    margin: 100px auto 0px auto;
-    text-align: center;
-    transition: 0.5s;
-}
-.a_opcao:hover{
-    margin: 70px auto 0px auto;
-    transition: 0.5s;
-    opacity: 60%;
-}
-
-/* ÁREA DE CONHECIMENTOS DE LINGUAGENS */
-
-.conhecimentos{
-    width: 100%;
-    text-align: center;
-    display: flex;
-}
-
-.titulo_conhecimento{
-    font-size: 32pt;
-    margin-top: 100px;
-    position: absolute;
-    margin-left: 30%;
-    color: rgb(87, 87, 255);
-}
-
-.tecnologia{
-    height: 150px;
-    width: 15%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 300px;
-    transition: 1s;
-    box-shadow: 0px 0px 0px rgb(0, 0, 0);
-    
-}
-.tecnologia:hover{
-    
-    transition: 0.5s;
-    opacity: 70%;
-    box-shadow: 0px 2px 0px rgb(0, 0, 0);
-}
-.img_tec{
-    height: 100px;
-    position: relative;
-    
-}
-.leg_tec{
-    font-size: 18pt;
-    font-size: arial;
-}
-
-#legenda{
-    display: flex;
-    justify-content: space-between;
-    height: 15%;
-    
-}
-
-
+/*
+************* RODAPÉ *************
+*/
 footer{
     margin-top: 70px;
+    color: rgb(231, 246, 255);
     position: absolute;
     margin-bottom: 0;
     height: 100px;
     width: 100%;
-    background-color: rgb(12, 14, 29);
+    background-color: rgb(0, 0, 0);
 }
 
 #rodape{
@@ -230,7 +262,13 @@ footer{
 }
 
 
-/* ADAPITAÇÃO A DIFERENTES TAMANHOS DE TELA */
+/* 
+  =====================================================================
+||                                                                     ||
+||              ADAPITAÇÃO A DIFERENTES TAMANHOS DE TELA               ||
+||                                                                     ||
+  =====================================================================
+*/
 
 
 @media screen and (max-width: 800px){
