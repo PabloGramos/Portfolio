@@ -10,8 +10,7 @@
 }
 @charset "UTF-8";
 body{
-    /*background-image: linear-gradient(to left, rgb(0, 0, 0), rgb(31, 35, 73), rgb(0, 0, 0));
-    color: white;    */
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 a{
     color: rgb(160, 159, 255);
@@ -75,11 +74,10 @@ img.icone:hover{
 .texto{
     position: relative;
     text-align:left;
-    width: 30vw;
+    width: 40%;
     margin-left: 15vw;
     margin-top: 200px;
     font-size: 24pt;
-    font-family: Arial sans-serif;
 }
 
 
@@ -104,18 +102,19 @@ img.icone:hover{
     font-size: 32pt;
     margin-top: 200px;
     position: relative;
-    
-    color: rgb(252, 252, 252);
+    color: rgb(255, 255, 255);
 }
 
 
 .tecnologia{
     float: left;
+    display: block;
     color: white;
     height: 150px;
+    width: 15%;
     margin-top: 200px;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 3%;
+    
     transition: 0.5s;
     box-shadow: 0px 0px 0px rgb(80, 80, 80);
     
@@ -147,26 +146,23 @@ img.icone:hover{
 .texto2{
     position: absolute;
     text-align:left;
-    width: 30vw;
-    margin-left: 15vw;
+    width: 40%;
+    margin-left: 10%;
     margin-top: 200px;
     font-size: 24pt;
-    font-family: Arial sans-serif;
 }
 #curriculo{
-    height: 200px;
-    width: 200px;
-    margin-top: 300px;
+    height: 640px;
+    width: 50%;
+    margin-top: 20px;
     position: relative;
     float: right;
     display: flex;
-    margin-right: 20%;
-    border-radius: 50% ;
-    background-color: rgb(255, 255, 255);
-    transition: 1s;
-}
-#curriculo:hover{
-    background-color: black;
+    align-items: center;
+    text-align: center;
+    /*margin-right: 20%;*/
+    border-radius: 100% 0% 0% 0%;
+    background-color: rgb(0, 0, 0);
     transition: 1s;
 }
 
@@ -174,18 +170,17 @@ img.icone:hover{
     height: 150px;
 }
 
-.img_opcao:hover{
-    margin-top: 0px;
-}
+
 .a_opcao{
     position: relative;
-    margin: 0px auto 0px auto;
+    height: 200px;
+    margin: 50px auto 0px auto;
     text-align: center;
     transition: 0.5s;
     color: black;
 }
 .a_opcao:hover{
-    margin: -20px auto 0px auto;
+    margin: 20px auto 0px auto;
     transition: 0.5s;
     opacity: 90%;
     color: white;
@@ -207,26 +202,27 @@ img.icone:hover{
 .projeto{
     display: block;
     width: 100%;
-    height: 350px;
+    height: 330px;
     background-color: rgb(0, 0, 0);
 }
 .imgprojeto{
     transition: 2s;
-    height: 300px;
+    width: 60%;
     position: absolute;
     margin-top: 25px;
     
 }
 .imgprojeto:hover{
     transition: 1s;
-    height: 350px;
+    width: 70%;
     margin-top: 0px;
 }
 
 .legprojeto{
+    text-align: center;
     font-size: 24pt;
     position: absolute;
-    margin-left: 65%;
+    margin-left: 70%;
     margin-top: 40px;
     color: rgb(0, 172, 114);
 }
@@ -236,9 +232,9 @@ img.icone:hover{
     font-size: 18pt;
     position: relative;
     float: right;
-    margin-top: 12%;
-    margin-right: 6%;
-    width: 500px;
+    margin-top: 150px;
+    margin-right: 5px;
+    width: 28%;
     text-align: center;
 }
 
@@ -304,86 +300,63 @@ footer{
     img.icone:hover{
         transition: all 0.6s;
         opacity: 0.7;
-        margin-top: 100px;
+        margin-top: 120px;
     }
 
     #fotoeu{
-        height: 350px;
+        height: 300px;
         margin: 50px auto 10px auto;
     }
     .espaco{
         display:grid;
-        width: 95%;
+        width: 100%;
         
     }
     .texto{
-        text-align: center;
+        text-align:justify;
         width: 80%;
         margin-top: 20px;
         font-size: 15pt;
     }
 
 
-    #opcoes{
-        height: 300px;
-        width: 96vw;
-    }
-    
-    #espaco_opcoes{
-        margin-top: 50px;
-        width: 96vw;
-        justify-content: space-between;
-        display: flex;
-    }
-    
-    .img_opcao{
-        width: 78px;
-        height: 80px;
-    }
-    
-    .a_opcao{
-        position: relative;
-        margin: 100px auto 0px auto;
-        text-align: center;
-        transition: 0.5s;
-        font-size: 10pt;
-    }
-
-    /* CONHECIMETOS */
+    /*
+    ********************************** CONHECIMETOS ************************************
+    */
 
     .conhecimentos{
+        position: relative;
         width: 100%;
+        margin-top: 40px;
         text-align: center;
-        display: inline;
-    
+        display: block;
+        height: 440px;
     }
     
     .titulo_conhecimento{
         font-size: 17pt;
-        position: absolute;
-        margin-top: -100px;
-        
+        position: relative;
+        margin-top: 30px;
+        width: 100%;
         
     }
     
     .tecnologia{
         text-align: center;
+        position: relative;
         height: 75px;
-        margin: 30px auto 7vw auto;
+        width: 15%;
+        margin-left: 25%;
+        margin-top: 40px;
         transition: 1s;
         box-shadow: 0px 0px 0px rgb(0, 0, 0);
         
     }
-    #tec1{
-        margin-top: 300px;
-    }
+    
     .img_tec{
         height: 50px;
-        
-        
     }
     .leg_tec{
-        
         font-size: 15pt;
         font-size: arial;
     }
@@ -395,13 +368,105 @@ footer{
         
     }
     
+
+    /* ESPAÇO PARA TEXTO E CURRÍCULO */
+.texto2{
+    position: relative;
+    text-align:center;
+    width: 60%;
+    margin-left: 15vw;
+    margin-top: 200px;
+    font-size: 18pt;
+    font-family: Arial sans-serif;
+}
+#curriculo{
+    
+    height: 400px;
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-radius: 100% 0% 0% 0%;
+    background-color: rgb(0, 0, 0);
+}
+
+.img_opcao{
+    height: 100px;
+}
+
+
+.a_opcao{
+    position: relative;
+    height: 200px;
+    margin: 50px auto 0px auto;
+    text-align: center;
+    transition: 0.5s;
+    color: rgb(255, 255, 255);
+}
+.a_opcao:hover{
+    margin: 50px auto 0px auto;
+    transition: 0.5s;
+    opacity: 80%;
+    color: white;
+}
+
+/*
+        **************************
+        *                        *
+        * ESPAÇO PARA OS PROJETOS*
+        *                        *
+        **************************
+*/
+
+#projetos{
+    margin-top: 500px;
+    display: block;
+    border: 4px solid rgb(0, 0, 0);
+}
+.projeto{
+    display:flex;
+    width: 100%;
+    height: 300px;
+    background-color: rgb(0, 0, 0);
+}
+.imgprojeto{
+    transition: 2s;
+    height: 35%;
+    position: relative;
+    margin: 25px 0px 0px 10px;
+}
+.imgprojeto:hover{
+    transition: 1s;
+    height: 35%;
+    margin: 25px 0px 0px 10px;
+}
+
+.legprojeto{
+    font-size: 18pt;
+    position: absolute;
+    margin-top: 30px;
+    color: rgb(145, 255, 218);
+}
+
+.textprojeto{
+    color: white;
+    font-size: 16pt;
+    position: absolute;
+    padding: 20px;
+    margin: 150px auto 0px auto;
+    width: 100%;
+    text-align: center;
+}
+
     
     footer{
         position: absolute;
         margin-bottom: 0;
         height: 100px;
         width: 100%;
-        background-color: rgb(12, 14, 29);
+        background-color: rgb(0, 0, 0);
     }
     
     #rodape{
