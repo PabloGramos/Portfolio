@@ -10,8 +10,7 @@
 }
 @charset "UTF-8";
 body{
-    background-image: linear-gradient(to left, rgb(0, 0, 0), rgb(31, 35, 73), rgb(0, 0, 0));
-    color: white;    
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 a{
     color: rgb(160, 159, 255);
@@ -27,20 +26,23 @@ div#apresentacao{
 }
 #nome{
     width: 400px;
+    height: 200px;
 }
 h1{
     font-size: 40pt;
-    padding-top: 9vw;
+    padding-top: 5vw;
     margin-left: 10px;
+    color: white;
 }
 h2{
     font-size: 25pt;
     margin-left: 10px;
     margin-bottom: 10px;
+    color: white;
 }
 
 img.icone{
-    margin-top: 170px;
+    margin-top: 120px;
     height: 60px;
     margin-left: 3vw;
     text-align: center;
@@ -49,105 +51,87 @@ img.icone{
 img.icone:hover{
     transition: all 0.6s;
     opacity: 0.7;
-    margin-top: 150px;
+    margin-top: 100px;
 }
 
 
 /* APRESENTAÇÃO PRINCIPAL */
 
 .espaco{
-    /*background-image: linear-gradient(to left, rgb(0, 0, 0), rgb(31, 35, 73), rgb(0, 0, 0));*/
-    
-    display: inline;
-}
-
-.texto{
-    text-align: center;
-    width: 50vw;
-    margin-left: 10vw;
-    margin-top: 200px;
-    font-size: 20pt;
-    font-family: Arial sans-serif;
+    display: block;
 }
 
 #fotoeu{
+    position: relative;
     float: right;
-    margin: 50px 10vw;
+    margin-top: 40px;
+    margin-right: 10%;
     border-radius: 1vw;
-    height: 500px;    
+    height: 400px;    
     box-shadow: 5px 10px 10px rgb(0, 0, 0);
 }
 
-
-
-/* ESPAÇO PARA OPÇÕES DE ABAS PARA PROJETOS E CURRÍCULO */
-
-#opcoes{
-    height: 500px;
-    width: 100%;
-}
-
-#espaco_opcoes{
-    margin-top: 100px;
-    width: 100%;
-    justify-content: space-between;
-    display: flex;
-    padding-left: 5vw;
-    padding-right: 5vw;
-}
-
-.img_opcao{
-    height: 150px;
-}
-
-.img_opcao:hover{
-    margin-top: 0px;
-}
-.a_opcao{
+.texto{
     position: relative;
-    margin: 100px auto 0px auto;
-    text-align: center;
-    transition: 0.5s;
-}
-.a_opcao:hover{
-    margin: 70px auto 0px auto;
-    transition: 0.5s;
-    opacity: 60%;
+    text-align:left;
+    width: 40%;
+    margin-left: 15vw;
+    margin-top: 200px;
+    font-size: 24pt;
 }
 
-/* ÁREA DE CONHECIMENTOS DE LINGUAGENS */
+
+
+
+/* 
+        ***********************************************
+************* ÁREA DE CONHECIMENTOS DE LINGUAGENS **************
+        ***********************************************
+*/
 
 .conhecimentos{
     width: 100%;
+    height: 600px;
     text-align: center;
+    display: block;
+    background-color: rgb(0, 0, 0);
+    
 }
 
 .titulo_conhecimento{
-    font-size: 35pt;
-    margin: 100px 20px;
+    font-size: 32pt;
+    margin-top: 200px;
+    position: relative;
+    color: rgb(255, 255, 255);
 }
 
+
 .tecnologia{
-    text-align: center;
-    height: 220px;
-    margin: 20px 7vw;
-    transition: 1s;
-    box-shadow: 0px 0px 0px rgb(0, 0, 0);
-    /*background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(128, 128, 131));*/
+    float: left;
+    display: block;
+    color: white;
+    height: 150px;
+    width: 15%;
+    margin-top: 200px;
+    margin-left: 3%;
+    
+    transition: 0.5s;
+    box-shadow: 0px 0px 0px rgb(80, 80, 80);
+    
 }
 .tecnologia:hover{
-    /*background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(21, 0, 206), rgb(255, 255, 255));*/
-    transition: 0.5s;
+    
+    transition: 0.4s;
     opacity: 70%;
-    box-shadow: 0px 2px 0px rgb(0, 0, 0);
+    box-shadow: 0px 2px 0px rgb(202, 202, 202);
 }
 .img_tec{
-    height: 180px;
+    height: 100px;
     position: relative;
     
 }
 .leg_tec{
-    font-size: 20pt;
+    font-size: 18pt;
     font-size: arial;
 }
 
@@ -155,18 +139,117 @@ img.icone:hover{
     display: flex;
     justify-content: space-between;
     height: 15%;
-    padding-left: 8vw;
-    padding-right: 7vw;
+    
+}
+
+/* ESPAÇO PARA TEXTO E CURRÍCULO */
+.texto2{
+    position: absolute;
+    text-align:left;
+    width: 40%;
+    margin-left: 10%;
+    margin-top: 200px;
+    font-size: 24pt;
+}
+#curriculo{
+    height: 640px;
+    width: 50%;
+    margin-top: 20px;
+    position: relative;
+    float: right;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    /*margin-right: 20%;*/
+    border-radius: 100% 0% 0% 0%;
+    background-color: rgb(0, 0, 0);
+    transition: 1s;
+}
+
+.img_opcao{
+    height: 150px;
 }
 
 
+.a_opcao{
+    position: relative;
+    height: 200px;
+    margin: 50px auto 0px auto;
+    text-align: center;
+    transition: 0.5s;
+    color: black;
+}
+.a_opcao:hover{
+    margin: 20px auto 0px auto;
+    transition: 0.5s;
+    opacity: 90%;
+    color: white;
+}
+
+/*
+        **************************
+        *                        *
+        * ESPAÇO PARA OS PROJETOS*
+        *                        *
+        **************************
+*/
+
+#projetos{
+    margin-top: 800px;
+    display: block;
+    border: 4px solid white;
+}
+.projeto{
+    display: block;
+    width: 100%;
+    height: 330px;
+    background-color: rgb(0, 0, 0);
+}
+.imgprojeto{
+    transition: 2s;
+    width: 60%;
+    position: absolute;
+    margin-top: 25px;
+    
+}
+.imgprojeto:hover{
+    transition: 1s;
+    width: 70%;
+    margin-top: 0px;
+}
+
+.legprojeto{
+    text-align: center;
+    font-size: 24pt;
+    position: absolute;
+    margin-left: 70%;
+    margin-top: 40px;
+    color: rgb(0, 172, 114);
+}
+
+.textprojeto{
+    color: white;
+    font-size: 18pt;
+    position: relative;
+    float: right;
+    margin-top: 150px;
+    margin-right: 5px;
+    width: 28%;
+    text-align: center;
+}
+
+
+/*
+************* RODAPÉ *************
+*/
 footer{
     margin-top: 70px;
+    color: rgb(231, 246, 255);
     position: absolute;
     margin-bottom: 0;
     height: 100px;
     width: 100%;
-    background-color: rgb(12, 14, 29);
+    background-color: rgb(0, 0, 0);
 }
 
 #rodape{
@@ -175,12 +258,18 @@ footer{
 }
 
 
-/* ADAPITAÇÃO A DIFERENTES TAMANHOS DE TELA */
+/* 
+  =====================================================================
+||                                                                     ||
+||              ADAPITAÇÃO A DIFERENTES TAMANHOS DE TELA               ||
+||                                                                     ||
+  =====================================================================
+*/
 
 
 @media screen and (max-width: 800px){
     body{
-        width: 100vw;
+        width: 100%;
         
     }
 
@@ -192,7 +281,7 @@ footer{
     #nome{
         position: absolute;
         width: 100%;
-        
+        height: 100px;
     }
     h1{
         font-size: 20pt;
@@ -200,75 +289,75 @@ footer{
     h2{
         font-size: 15pt;
     }
+
+    img.icone{
+        margin-top: 120px;
+        height: 45px;
+        margin-left: 3vw;
+        text-align: center;
+        transition: all 1s;
+    }
+    img.icone:hover{
+        transition: all 0.6s;
+        opacity: 0.7;
+        margin-top: 120px;
+    }
+
     #fotoeu{
-        height: 250px;
+        height: 300px;
         margin: 50px auto 10px auto;
     }
     .espaco{
         display:grid;
-        width: 95%;
+        width: 100%;
         
     }
     .texto{
-        text-align: center;
-        width: 80vw;
+        text-align:justify;
+        width: 80%;
         margin-top: 20px;
         font-size: 15pt;
     }
 
 
-    #opcoes{
-        height: 300px;
-        width: 96vw;
-    }
-    
-    #espaco_opcoes{
-        margin-top: 50px;
-        width: 96vw;
-        justify-content: space-between;
-        display: flex;
-    }
-    
-    .img_opcao{
-        width: 78px;
-        height: 80px;
-    }
-    
-    .a_opcao{
-        position: relative;
-        margin: 100px auto 0px auto;
-        text-align: center;
-        transition: 0.5s;
-        font-size: 10pt;
-    }
-
-    /* CONHECIMETOS */
+    /*
+    ********************************** CONHECIMETOS ************************************
+    */
 
     .conhecimentos{
+        position: relative;
         width: 100%;
+        margin-top: 40px;
         text-align: center;
+        display: block;
+        height: 440px;
     }
     
     .titulo_conhecimento{
         font-size: 17pt;
+        position: relative;
+        margin-top: 30px;
+        width: 100%;
         
     }
     
     .tecnologia{
         text-align: center;
-        height: 120px;
-        margin: 20px 7vw;
+        position: relative;
+        height: 75px;
+        width: 15%;
+        margin-left: 25%;
+        margin-top: 40px;
         transition: 1s;
         box-shadow: 0px 0px 0px rgb(0, 0, 0);
         
     }
+    
     .img_tec{
-        height: 80px;
-        
-        
+        height: 50px;
     }
     .leg_tec{
-        font-size: 18pt;
+        font-size: 15pt;
         font-size: arial;
     }
     
@@ -276,17 +365,108 @@ footer{
         display: flex;
         justify-content: space-between;
         height: 15%;
-        padding-left: 8vw;
-        padding-right: 7vw;
+        
     }
     
+
+    /* ESPAÇO PARA TEXTO E CURRÍCULO */
+.texto2{
+    position: relative;
+    text-align:center;
+    width: 60%;
+    margin-left: 15vw;
+    margin-top: 200px;
+    font-size: 18pt;
+    font-family: Arial sans-serif;
+}
+#curriculo{
+    
+    height: 400px;
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-radius: 100% 0% 0% 0%;
+    background-color: rgb(0, 0, 0);
+}
+
+.img_opcao{
+    height: 100px;
+}
+
+
+.a_opcao{
+    position: relative;
+    height: 200px;
+    margin: 50px auto 0px auto;
+    text-align: center;
+    transition: 0.5s;
+    color: rgb(255, 255, 255);
+}
+.a_opcao:hover{
+    margin: 50px auto 0px auto;
+    transition: 0.5s;
+    opacity: 80%;
+    color: white;
+}
+
+/*
+        **************************
+        *                        *
+        * ESPAÇO PARA OS PROJETOS*
+        *                        *
+        **************************
+*/
+
+#projetos{
+    margin-top: 500px;
+    display: block;
+    border: 4px solid rgb(0, 0, 0);
+}
+.projeto{
+    display:flex;
+    width: 100%;
+    height: 300px;
+    background-color: rgb(0, 0, 0);
+}
+.imgprojeto{
+    transition: 2s;
+    height: 35%;
+    position: relative;
+    margin: 25px 0px 0px 10px;
+}
+.imgprojeto:hover{
+    transition: 1s;
+    height: 35%;
+    margin: 25px 0px 0px 10px;
+}
+
+.legprojeto{
+    font-size: 18pt;
+    position: absolute;
+    margin-top: 30px;
+    color: rgb(145, 255, 218);
+}
+
+.textprojeto{
+    color: white;
+    font-size: 16pt;
+    position: absolute;
+    padding: 20px;
+    margin: 150px auto 0px auto;
+    width: 100%;
+    text-align: center;
+}
+
     
     footer{
         position: absolute;
         margin-bottom: 0;
         height: 100px;
-        width: 100vw;
-        background-color: rgb(12, 14, 29);
+        width: 100%;
+        background-color: rgb(0, 0, 0);
     }
     
     #rodape{
