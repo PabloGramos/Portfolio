@@ -207,14 +207,17 @@ img.icone:hover{
 }
 .imgprojeto{
     transition: 2s;
-    width: 60%;
+    width: 400px;
+    height: 250px;
+    margin-top: 40px;
     position: absolute;
-    margin-top: 25px;
+    
     
 }
 .imgprojeto:hover{
     transition: 1s;
-    width: 70%;
+    width: 550px;
+    height: 330px;
     margin-top: 0px;
 }
 
