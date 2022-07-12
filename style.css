@@ -437,11 +437,13 @@ footer{
 .imgprojeto{
     transition: 2s;
     height: 35%;
+    width: 200px;
     position: relative;
     margin: 25px 0px 0px 10px;
 }
 .imgprojeto:hover{
     transition: 1s;
+    width: 400px;
     height: 35%;
     margin: 25px 0px 0px 10px;
 }
