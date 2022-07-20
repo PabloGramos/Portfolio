@@ -1,0 +1,2 @@
+alert("Hello!")
+confirm('Hellooooooooo!')
