@@ -26,13 +26,13 @@
         Àrea de testes
     </div>
 
-    <div id="calculadora">
+    <nav id="calculadora">
         <h1>Calculadora</h1>
         <input type="number" name="txtn1" id="txtn1">
         <input type="number" name="txtn2" id="txtn2">
         <input type="button" value="=" onclick="somar()">
         <div id="resposta"> Resultado </div>
-    </div>
+    </nav>
 
 
     <script>
@@ -55,7 +55,7 @@
 
         function somar(){
             var tn1 = window.document.getElementById('txtn1')
-            var tn1 = window.document.getElementById('txtn2')
+            var tn2 = window.document.getElementById('txtn2')
             var res = window.document.getElementById('resposta')
             var n1 = Number(tn1.value)
             var n2 = Number(tn2.value)

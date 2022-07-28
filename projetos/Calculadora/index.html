@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Testes JavaScript</title>
+    
+    
+    
+    <style>
+        div{
+
+        }
+    </style>
+
+</head>
+<body>
+
+    <nav id="calculadora">
+        <h1>Calculadora</h1>
+        <input type="number" name="valor" id="valor">
+        <input type="button" value="+" onclick="somar()">
+        <input type="button" value="-" onclick="subtrair()">
+        <input type="button" value="/" onclick="dividir()">
+        <input type="button" value="x" onclick="multiplicar()">
+        <input type="button" value="=" onclick="resultado()">
+        <div id="resposta"> Resultado </div>
+    </nav>
+
+
+    <script>
+        function somar(){
+            while(true){
+                var cont = 0
+                var array = []
+                array[cont] = window.document.getElementById('valor')
+            
+                var res = window.document.getElementById('resposta')
+
+                var num = Number(array.value)
+                
+                res.innerText = 0
+            
+                var s = num + num
+                res.innerText = s
+                cont = cont + 1
+            }
+        }
+
+
+    </script>
+
+</body>
+</html>
