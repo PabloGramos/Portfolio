@@ -281,7 +281,45 @@ img.icone:hover{
     width: 28%;
     text-align: center;
 }
+/*
+*************************************************
+                    FORMULÁRIO                  *
+*************************************************
+*/
+form{
+    border: solid 2px black;
+    height: 550px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    box-shadow: 2px 5px 10px black;
+    border-radius: 5%;
+}
 
+#title_form{
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 2px black;
+    text-align: center;
+}
+input, textarea{
+    width: 50%;
+    margin-top: 20px;
+    margin-left: 25%;
+    box-shadow: 3px 3px 3px black;
+}
+.enviar{
+    box-shadow: 3px 3px 3px black;
+    width: 70px;
+    height: 30px;
+    transition: 1s;
+    border-radius: 15%;
+}
+.enviar:hover{
+    background-color: black;
+    color: white;
+    transition: 1s;
+}
 
 /*
 ************* RODAPÉ *************

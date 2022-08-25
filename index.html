@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pablo Vinícius</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     
 </head>
 <body>
@@ -102,6 +103,19 @@
         </div>
     </nav>
 
+    <form action="" name="formulario">
+        <h1 id="title_form">Entre em Contato</h1>
+        <input type="text" id="nomeid" placeholder="Pablo Vinícius" required="required" name="nome">
+        <label for="nome">Nome</label>
+        <input type="tel" id="foneid" placeholder="(xx)x xxxx-xxxx" name="fone">
+        <label for="fone">Telefone</label>
+        <input type="email" id="nomeid" placeholder="fulano@gmail.com" name="email">
+        <label for="email">Email</label>
+
+        <textarea name="" id="" cols="30" rows="10" placeholder="Deixe sua opinião..."></textarea>
+
+        <input type="submit" class="enviar" onclick="Enviar();" value="Enviar">
+    </form>
 
     <footer>
         <p id="rodape">Copyright &copy; 2022 - by Pablo Vinícius<br/> WathsApp (63) 99252-0476</p>
