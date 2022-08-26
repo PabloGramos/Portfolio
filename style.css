@@ -288,13 +288,14 @@ img.icone:hover{
 */
 form{
     border: solid 2px black;
-    height: 550px;
-    width: 50%;
+    height: 600px;
+    width: 65%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
     box-shadow: 2px 5px 10px black;
     border-radius: 5%;
+    background-color: rgb(206, 206, 206);
 }
 
 #title_form{
