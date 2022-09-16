@@ -79,7 +79,7 @@ img.icone:hover{
     width: 70px;
     position: absolute;
     bottom: 0;
-    animation: mario 4s infinite linear;
+    animation: mario 8s infinite linear;
 }
 
 @keyframes mario{
@@ -87,14 +87,14 @@ img.icone:hover{
         left: 0;
         opacity: 0;
     }
-    10%{
+    5%{
         opacity: 1;
     }
-    90%{
+    95%{
         opacity: 1;
     }
     100%{
-        left: 92%;
+        left: 95%;
         opacity: 0;
     }
 }
