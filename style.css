@@ -1,5 +1,5 @@
 /* ESTILO DO CORPO */
-
+@charset "UTF-8";
 *{
 	margin: 0;
 	padding: 0;
@@ -8,7 +8,7 @@
     font: inherit;
     text-decoration: none;
 }
-@charset "UTF-8";
+
 body{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -154,6 +154,7 @@ img.icone:hover{
     width: 15%;
     margin-top: 200px;
     margin-left: 3%;
+    border-radius: 60%;
     
     transition: 0.5s;
     box-shadow: 0px 0px 0px rgb(80, 80, 80);
@@ -344,7 +345,7 @@ footer{
 /* 
   =====================================================================
 ||                                                                     ||
-||              ADAPITAÇÃO A DIFERENTES TAMANHOS DE TELA               ||
+||              RESPONSIVIDADE A DIFERENTES TAMANHOS DE TELA               ||
 ||                                                                     ||
   =====================================================================
 */
