@@ -9,3 +9,5 @@ function Enviar(){
         alert( nome.value + "\n" + fone.value + "\n" + email.value + "\n" + msg)
     }
 }
+var a = 30
+console.log("sakjdhsakjhj")
