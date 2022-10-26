@@ -104,7 +104,7 @@
         </div>
     </nav>
 
-    <form action="pabloviniciusgramos@gmail.com" method="POST" anctype="text/plain" name="formulario">
+    <form action="https://formsubmit.co/pabloviniciusgramos@gmail.com" method="POST" name="formulario">
         <h1 id="title_form">Entre em Contato</h1>
         
         <label for="nome">
@@ -122,9 +122,13 @@
             <input type="email" id="emailid" placeholder="fulano@gmail.com" name="email">
         </label>
 
-        <textarea name="" id="msgid" cols="30" rows="10" placeholder="Deixe sua opinião..." required></textarea>
+        <textarea name="massage" id="msgid" cols="30" rows="10" placeholder="Deixe sua opinião..." required></textarea>
         
-        <input type="submit" class="enviar" value="Enviar">
+        <button type="submit" class="enviar" onclick="Enviar()">Enviar</button>
+        <input type="hidden" name="_subject" value="Novo Contato!">
+        <input type="text" name="_honey" style="display:none;">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="http://127.0.0.1:5500/Portfolio/index.html">
     </form>
 
     <footer>
