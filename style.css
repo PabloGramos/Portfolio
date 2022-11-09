@@ -28,7 +28,7 @@ div#apresentacao{
     width: 400px;
     height: 200px;
 }
-h1{
+#nometitulo{
     font-size: 40pt;
     padding-top: 5vw;
     margin-left: 10px;
@@ -288,7 +288,6 @@ img.icone:hover{
 *************************************************
 */
 form{
-    border: solid 2px black;
     height: 600px;
     width: 45%;
     display: block;
@@ -297,26 +296,28 @@ form{
     margin-top: 50px;
     box-shadow: 2px 5px 10px black;
     border-radius: 5%;
-    background-color: rgb(206, 206, 206);
     text-align: center;
 }
 
 #title_form{
     color: rgb(0, 0, 0);
-    text-shadow: 1px 1px 2px black;
+    text-shadow: 1px 1px 2px rgb(77, 77, 77);
+    font-size: 28pt;
 }
 label{
     display: block;
+    height: 50px;
     margin: 20px auto 20px auto;
+    
 }
 input{
     width: 40%;
-    box-shadow: 3px 3px 3px black;
+    box-shadow: 0px 1px 5px black;
     text-align: center;
 }
 textarea{
     width: 50%;
-    box-shadow: 3px 3px 3px black;
+    box-shadow: 0px 3px 5px black;
 }
 
 .enviar{
@@ -344,7 +345,7 @@ footer{
     color: rgb(231, 246, 255);
     position: absolute;
     margin-bottom: 0;
-    height: 100px;
+    height: 150px;
     width: 100%;
     background-color: rgb(0, 0, 0);
 }
