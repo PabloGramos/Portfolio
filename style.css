@@ -289,7 +289,7 @@ img.icone:hover{
 */
 form{
     height: 600px;
-    width: 45%;
+    width: 50%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -538,24 +538,24 @@ footer{
 }
 .imgprojeto:hover{
     transition: 1s;
-    width: 400px;
+    width: 220px;
     height: 35%;
     margin: 25px 0px 0px 10px;
 }
 
 .legprojeto{
-    font-size: 18pt;
+    font-size: 15pt;
     position: absolute;
-    margin-top: 30px;
+    margin-top: -90px;
     color: rgb(145, 255, 218);
 }
 
 .textprojeto{
     color: white;
-    font-size: 16pt;
+    font-size: 14pt;
     position: absolute;
     padding: 20px;
-    margin: 150px auto 0px auto;
+    margin: 0px auto 0px auto;
     width: 100%;
     text-align: center;
 }
