@@ -15,7 +15,13 @@ body {
 
 h1 {
     color: #FFF;
+    font-size: 27pt;
     margin-bottom: 20px;
+}
+h3 {
+    color: #FFF;
+    font-size: 13pt;
+    margin-bottom: 30px;
 }
 .keys {
     display: grid;
