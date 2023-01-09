@@ -268,7 +268,7 @@ img.icone:hover{
     text-align: center;
     font-size: 24pt;
     position: absolute;
-    margin-left: 70%;
+    margin-left: 68%;
     margin-top: 40px;
     color: rgb(0, 172, 114);
 }
@@ -279,7 +279,7 @@ img.icone:hover{
     position: relative;
     float: right;
     margin-top: 150px;
-    margin-right: 5px;
+    margin-right: 20px;
     width: 28%;
     text-align: center;
 }
