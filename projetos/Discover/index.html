@@ -21,7 +21,34 @@
     </style>
 </head>
 <body>
+    <!---****************************************** CORPO HTML *****************************************-->
     <div id="bloco1">Bloco 01</div>
     <div id="bloco2">Bloco 02</div>
+
+
+<!---********************************************* JAVASCRIPT **************************************************-->
+
+    <script>
+        var section = document.getElementById("bloco1")
+        var divs = document.getElementsByTagName("div")["bloco2"]
+
+        function getElements(/*ids...*/){
+            var elements = {}
+            for(var i = 0; i < arguments.length; i++){
+                var id = arguments[i]
+                
+                var elt = document.getElementById(id)
+                if(elt == null)
+                    throw new Error("No element with id: " + id)
+                elements[id] = elt
+            }
+            return elements
+        }
+        
+        var mostra = getElements()
+        console.log(mostra)
+        console.log(section)
+        console.log(divs)
+    </script>
 </body>
 </html>
