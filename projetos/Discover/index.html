@@ -12,84 +12,93 @@
             padding: 0;
         }
         body{
+            height: 100vh;
             color: white;
-            background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 100));
-            
+            background: linear-gradient(rgb(255, 255, 255),rgb(44, 44, 44));
         }
         div{
             display: block;
             box-sizing: border-box;
-            width: 50vh;
-            height: 500px;
+            width: 200px;
+            height: 200px;
             border: solid 2px black;
+            
         }
         #bloco1{
             background-image: url(http://source.unsplash.com/random);
             background-repeat: no-repeat;
             background-position: center;
             background-size: contain;
+            position: absolute;
+            top: 110px;
+            left: 10px;
+            transition: 1s;
+        }
+        #bloco1:hover{
+            top: 50px;
+            
+            
         }
         #bloco2{
+            background-color: blue;
+            position: absolute;
+            top: 130px;
+            left: 50px;
+            transition: 1s;
+        }
+        #bloco2:hover{
+            top: 50px;
+            
+        }
+        #bloco3{
+            background-color: red;
+            position: absolute;
+            top: 150px;
+            left: 110px;
+            transition: 1s;
+        }
+        #bloco3:hover{
+            top: 50px;
+            
+        }
+
+
+        .caixa_pai{
+            background-color: rgb(117, 137, 155);
+            width: 700px;
+            height: 700px;
             float: right;
+
+            display: flex;
+            
+        }
+        #caixa1{
+            background-color: red;
+        }
+        #caixa2{
+            background-color: blue;
+        }
+        #caixa3{
+            background-color: green;
         }
     </style>
 </head>
 <body>
     <!---****************************************** CORPO HTML *****************************************-->
     <div id="bloco1">
-        <table>
-            <tr>
-                <th>Nome</th>
-                <th>Idade</th>
-            </tr>
-            <tr>
-                <td>Pablo</td>
-                <td>23</td>
-            </tr>
-        </table>
+        
     </div>
     <div id="bloco2">
-        <table>
-            <caption>Produzidos x Vendidos Por Loja</caption>
-
-            <colgroup>
-                <col>
-                <col span="2" style="background-color: red;">
-                <col span="2" style="background-color: blue;">
-            </colgroup>
-
-            <thead>
-                <tr>
-                    <th rowspan="2"></th>
-                    <th colspan="2">Afonso Pena</th>
-                    <th colspan="2">Antônia Pereira</th>
-                </tr>
-                <tr>
-                    <th>Produzidos</th>
-                    <th>Vendidos</th>
-                    <th>Produzidos</th>
-                    <th>Vendidos</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th>Vassouras</th>
-                    <td>50</td>
-                    <td>30</td>
-                    <td>20</td>
-                    <td>20</td>
-                </tr>
-                <tr>
-                    <th>Baldes</th>
-                    <td>10</td>
-                    <td>15</td>
-                    <td>30</td>
-                    <td>25</td>
-                </tr>
-            </tbody>
-        </table>
+        
     </div>
-
+    <div id="bloco3">
+        
+    </div>
+    <nav class="caixa_pai">
+        <div id="caixa1"></div>
+        <div id="caixa2"></div>
+        <div id="caixa3"></div>
+    </nav>
 
 <!---********************************************* JAVASCRIPT **************************************************-->
 
