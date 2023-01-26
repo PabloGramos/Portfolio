@@ -75,33 +75,23 @@
         </div>
 
     </nav>
+    <section id="pontos">
+        <label for="text"></label>
+    </section>
 
 
 
     <!---********************************** SCRIPTS ****************************************-->
     <script>
+
         function clicar(num) {
-            return num
-            
-        }
-
-
-        var aleatorio = Math.floor(Math.random() * 2)
-        const barcos = [7]
-        for (let i = 0; i < 7; i++){
-            barcos[i] = Math.floor(Math.random() * 26)
-            console.log(barcos[i])
-        }
-        
-        
-        for (let l = 1; l < 26; l++) {
-            if (clicar() == barcos[l]) {
-                document.getElementById(clicar()).style.backgroundImage="url(barco.jpg)";
+            var aleatorio = Math.floor(Math.random() * 2)
+            if (aleatorio == 0) {
+                document.getElementById(num).style.backgroundImage="url(barco.jpg)";
             }
             else{
-                document.getElementById(clicar()).style.backgroundImage="url(erro.jpg)";
+                document.getElementById(num).style.backgroundImage="url(erro.jpg)";
             }
-            console.log(barco[l])
         }
 
 
